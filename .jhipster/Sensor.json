@@ -1,0 +1,40 @@
+{
+    "name": "Sensor",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "alertsEnabled",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "sensorDevice",
+            "otherEntityName": "sensorDevice",
+            "otherEntityField": "deviceId",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "sensor"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "sensorDevice",
+            "otherEntityName": "sensorDevice",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180822162645",
+    "entityTableName": "sensor",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "sensoconServer"
+}

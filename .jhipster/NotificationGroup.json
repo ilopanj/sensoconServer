@@ -1,0 +1,28 @@
+{
+    "name": "NotificationGroup",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "sensorDevice",
+            "otherEntityName": "sensorDevice",
+            "otherEntityRelationshipName": "notificationGroup"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "contact",
+            "otherEntityName": "contact",
+            "otherEntityRelationshipName": "notificationGroup"
+        }
+    ],
+    "changelogDate": "20180822162649",
+    "entityTableName": "notification_group",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "sensoconServer"
+}
