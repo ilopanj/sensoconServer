@@ -1,0 +1,43 @@
+{
+    "name": "LoraPacket",
+    "fields": [
+        {
+            "fieldName": "rssi",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "batteryLevel",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "timestamp",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "temperature",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "pressure",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "sensorDevice",
+            "otherEntityName": "sensorDevice",
+            "otherEntityField": "deviceId"
+        }
+    ],
+    "changelogDate": "20180822162651",
+    "entityTableName": "lora_packet",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "sensoconServer"
+}

@@ -1,0 +1,25 @@
+{
+    "name": "SensorThreshold",
+    "fields": [
+        {
+            "fieldName": "type",
+            "fieldType": "ThresholdType",
+            "fieldValues": "THRESHOLD_GE,THRESHOLD_LE,THRESHOLD_TIMEOUT,THRESHOLD_BATTERY_LEVEL"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20180822162647",
+    "entityTableName": "sensor_threshold",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "sensoconServer"
+}

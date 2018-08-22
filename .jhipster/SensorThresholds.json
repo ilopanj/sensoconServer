@@ -1,0 +1,15 @@
+{
+    "name": "SensorThresholds",
+    "fields": [],
+    "relationships": [],
+    "changelogDate": "20180822162646",
+    "entityTableName": "sensor_thresholds",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "sensoconServer"
+}

@@ -5,6 +5,23 @@
     xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162641_added_entity_Company.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162642_added_entity_CompanySettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162643_added_entity_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162644_added_entity_SensorDevice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162645_added_entity_Sensor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162646_added_entity_SensorThresholds.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162647_added_entity_SensorThreshold.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162648_added_entity_SensorGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162649_added_entity_NotificationGroup.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162650_added_entity_LoraGateway.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162651_added_entity_LoraPacket.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162652_added_entity_Location.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20180822162643_added_entity_constraints_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162644_added_entity_constraints_SensorDevice.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162645_added_entity_constraints_Sensor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162650_added_entity_constraints_LoraGateway.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20180822162651_added_entity_constraints_LoraPacket.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

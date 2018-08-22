@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity SensorDevice.
+    -->
+    <changeSet id="20180822162644-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="location_id"
+                                 baseTableName="sensor_device"
+                                 constraintName="fk_sensor_device_location_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="company_id"
+                                 baseTableName="sensor_device"
+                                 constraintName="fk_sensor_device_company_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="company"/>
+
+        <addForeignKeyConstraint baseColumnNames="location_id"
+                                 baseTableName="sensor_device"
+                                 constraintName="fk_sensor_device_location_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="location"/>
+
+        <addForeignKeyConstraint baseColumnNames="notification_group_id"
+                                 baseTableName="sensor_device"
+                                 constraintName="fk_sensor_device_notification_group_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="notification_group"/>
+
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,63 @@
+{
+    "name": "SensorDevice",
+    "fields": [
+        {
+            "fieldName": "deviceId",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "location",
+            "otherEntityName": "location",
+            "otherEntityField": "name",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "sensorDevice"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "sensor",
+            "otherEntityName": "sensor",
+            "otherEntityRelationshipName": "sensorDevice"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "company",
+            "otherEntityName": "company",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "relationshipValidateRules": "required",
+            "relationshipName": "location",
+            "otherEntityName": "location",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipName": "notificationGroup",
+            "otherEntityName": "notificationGroup",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20180822162644",
+    "entityTableName": "sensor_device",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*",
+    "microserviceName": "sensoconServer"
+}
